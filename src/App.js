@@ -12,6 +12,9 @@
 import { Switch, Route, Redirect } from "react-router-dom";
 import Home from "./pages/Home";
 import Tables from "./pages/Tables";
+import Tables_Profesor from "./pages/Tables_Profesor";
+import Tables_Grupo from "./pages/Tables_Grupo";
+import Tables_Estudiante from "./pages/Tables_Estudiante";
 import Billing from "./pages/Billing";
 import Rtl from "./pages/Rtl";
 import Profile from "./pages/Profile";
@@ -31,6 +34,9 @@ function App() {
         <Main>
           <Route exact path="/dashboard" component={Home} />
           <Route exact path="/tables" component={Tables} />
+          <Route exact path="/tables_profesor" component={Tables_Profesor} />
+          <Route exact path="/tables_grupo" component={Tables_Grupo} />
+          <Route exact path="/tables_estudiante" component={Tables_Estudiante} />
           <Route exact path="/billing" component={Billing} />
           <Route exact path="/rtl" component={Rtl} />
           <Route exact path="/profile" component={Profile} />
